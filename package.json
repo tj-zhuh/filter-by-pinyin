@@ -1,0 +1,42 @@
+{
+  "name": "filter-by-pinyin",
+  "version": "0.1.0",
+  "description": "filter by pinyin",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./index.js",
+    "build": "npm run clean && webpack",
+    "dev": "webpack-dev-server --config ./examples/webpack.config.dev.js",
+    "start": "npm run dev",
+    "prepublish": "npm run build",
+    "postpublish": "npm run clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyke09/filter-by-pinyin.git"
+  },
+  "keywords": [
+    "filter",
+    "pinyin"
+  ],
+  "author": "tyke09",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyke09/filter-by-pinyin/issues"
+  },
+  "homepage": "https://github.com/tyke09/filter-by-pinyin#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.11.0",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "files": [
+    "index.js"
+  ]
+}
